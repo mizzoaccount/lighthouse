@@ -128,7 +128,7 @@ const Perspectives = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("http://localhost:5000/api/devotions");
+        const response = await fetch("https://outreachbackend.onrender.com/api/devotions");
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }
