@@ -53,7 +53,7 @@ export const DevotionModal = ({ isOpen, onClose, onAddDevotion }: DevotionModalP
     setIsSubmitting(true);
     
     try {
-      const response = await fetch('http://localhost:5000/api/devotions', {
+      const response = await fetch('https://outreachbackend.onrender.com/api/devotions', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

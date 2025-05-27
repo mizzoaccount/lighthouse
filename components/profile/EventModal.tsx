@@ -148,7 +148,7 @@ export const EventModal = ({ isOpen, onClose, onAddEvent }: EventModalProps) => 
   console.log(`${key}:`, value);
 }
 
-      const response = await fetch('http://localhost:5000/api/events', {
+      const response = await fetch('https://outreachbackend.onrender.com/api/events', {
         method: 'POST',
         body: formDataToSend,
       });

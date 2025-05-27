@@ -83,7 +83,7 @@ export const SermonModal = ({ isOpen, onClose, onAddSermon }: SermonModalProps) 
         formDataToSend.append('pdfFile', formData.pdfFile);
       }
 
-      const response = await fetch('http://localhost:5000/api/sermons', {
+      const response = await fetch('https://outreachbackend.onrender.com/api/sermons', {
         method: 'POST',
         body: formDataToSend,
       });

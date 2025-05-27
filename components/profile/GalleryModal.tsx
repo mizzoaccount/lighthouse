@@ -61,7 +61,7 @@ export const GalleryModal = ({ isOpen, onClose, onAddGalleryItem }: GalleryModal
         formDataToSend.append('image', formData.image);
       }
 
-      const response = await fetch('http://localhost:5000/api/gallery', {
+      const response = await fetch('https://outreachbackend.onrender.com/api/gallery', {
         method: 'POST',
         body: formDataToSend,
       });
